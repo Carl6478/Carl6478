@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-<style>
-body {
-  background-image: url('talj-01.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-</style>
+  <style>
+    /* Ensure the body occupies the full screen */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background-image: url('talj-01.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover; /* Default for larger screens */
+    }
+
+    /* Adjustments for smaller screen sizes */
+    @media (max-width: 768px) {
+      body {
+        background-size: contain; /* Fit the image within smaller screens */
+        background-position: top center; /* Ensure the most important part of the image is visible */
+      }
+    }
+  </style>
 </head>
 <body>
-
-
 </body>
 </html>
-
